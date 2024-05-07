@@ -30,6 +30,7 @@ jobsList = [
     {'profit': 50, 'time': 3, 'deadline': 10},
     {'profit': 20, 'time': 1, 'deadline': 2},
     {'profit': 40, 'time': 5, 'deadline': 7},
+    {'profit': 70, 'time': 7, 'deadline': 5},
 ]
 
 jobsList.sort(key= lambda x:x["deadline"])
