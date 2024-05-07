@@ -9,7 +9,7 @@ def schedule_jobs(currTime, jobs):
   jobsWithoutCurrent.pop(0)
   currentJob = jobs[0]
   
-  #check if current job can be completed in deadline
+  #check if first job can be completed in deadline
   if currentJob["time"] + currTime <= currentJob["deadline"]:
     newTime = currentJob["time"] + currTime
     profitWithCurrentExecuted, schedule = schedule_jobs(newTime, jobsWithoutCurrent)
