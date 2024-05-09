@@ -33,6 +33,7 @@ def AstarAlgo(graph, heuristic, start, goal):
                 open_list.append(createNode(neighbor, gCost, hCost))
         
         open_list.sort(key = lambda x: x["fCost"])
+    return -1
 
 
 graph = [
